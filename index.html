@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang=en>
+ <head>
+    <title>Loading Who's...</title>
+         <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
+ <style>
+ body {
+     background-color: lightpink
+     }
+     h1 {
+         text-align: center
+     }
+     h1 {
+         color: whitesmoke;
+     }
+     h1 {
+         background-color: black
+     }
+     h1 {
+         font-family: monospace 
+     }
+     
+     
+ <--loading-waves-->
+     <--Credit:https://codepen.io/Bilal1909/pen/pobgJae-->
+     bodY {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wave {
+  width: 5px;
+  height: 90px;
+  background: linear-gradient(black, black, black);
+  margin: 10px;
+  animation: wave 1s linear infinite;
+  border-radius: 20px;
+}
+.wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.wave:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+     
+     
+     
+     
+         <script type="text/javascript">
+        setTimeout(
+  function() {
+    var id200 = document.getElementById(".center");
+    id200.style.transition = "opacity " + 3 + "s";
+    id200.style.opacity = 0;
+    id200.addEventListener("transitionend", function() {
+      console.log("transition has ended, set display: none;");
+      id200.style.display = "none";
+    });
+  }, 3000
+);
+    </script>
+
+     </style>
+    </head>
+    
+ <body>
+    <meta http-equiv="Refresh" content="4; url='/home.html'" />
+     
+     <h1> Give us a second</h1>
+    
+     <div class="center">
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+</div>
+  
+
+    </body>
+</html>
